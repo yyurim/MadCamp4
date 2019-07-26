@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write Pet Info"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:textSize="35dp"
+            android:fontFamily="@font/delius_unicase"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTICE: 'cannot' change TOP THREE info"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/delius_unicase"/>
+
+        <ImageView
+            android:id="@+id/pet_profile"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/dog"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/new_name"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/snowburst_one"
+                android:hint="Name"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/new_firstDate"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/snowburst_one"
+                android:hint="First Meet Date (2017-03-22)"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/new_species"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/snowburst_one"
+                android:hint="Species (Cat? Dog? Crocodile?)"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/new_gender"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/snowburst_one"
+                android:hint="Gender (Female/Male)"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/new_age"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/snowburst_one"
+                android:hint="Age"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/new_bf"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/snowburst_one"
+                android:hint="Write your BestFriend :)"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/new_neutralization"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/snowburst_one"
+                android:hint="Neutralization? (Yes/No)"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_pet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/delius_unicase"
+            android:textStyle="bold"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</ScrollView>

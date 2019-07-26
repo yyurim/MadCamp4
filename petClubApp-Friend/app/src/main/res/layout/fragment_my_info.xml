@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center|top"
+    android:paddingHorizontal="15dp"
+    android:id="@+id/detailInfo_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/delius_unicase"
+                        android:text="ID"
+                        android:textColor="#808080" />
+
+                    <TextView
+                        android:id="@+id/userID"
+                        android:text="ID"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/delius_unicase" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_lock">
+
+                    <TextView
+                        android:id="@+id/userPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/delius_unicase"
+                        android:text="Password"
+                        android:textColor="#808080" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edt_password"
+                        android:textSize="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableRight="@drawable/ic_lock"
+                        android:fontFamily="@font/delius_unicase"
+                        android:inputType="textPassword" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/userPasswordConfirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/delius_unicase"
+                        android:text="Password Confirmation"
+                        android:textColor="#808080" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/edt_password_confirm"
+                        android:textSize="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableRight="@drawable/ic_lock"
+                        android:fontFamily="@font/delius_unicase"
+                        android:inputType="textPassword" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/delius_unicase"
+                        android:text="Name"
+                        android:textColor="#808080" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:text="NAME"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/delius_unicase" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/delius_unicase"
+                        android:text="Phone"
+                        android:textColor="#808080" />
+
+                    <TextView
+                        android:id="@+id/userPhone"
+                        android:text="phone"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/delius_unicase" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/delius_unicase"
+                        android:text="Email"
+                        android:textColor="#808080" />
+
+                    <TextView
+                        android:id="@+id/userEmail"
+                        android:text="Email"
+                        android:textSize="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/delius_unicase" />
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/delius_unicase"
+                    android:text="Modify"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

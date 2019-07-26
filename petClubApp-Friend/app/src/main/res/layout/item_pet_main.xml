@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="7dp"
+    android:elevation="90dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/pet_profile"
+            android:src="@drawable/ic_user"/>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/pet_profile"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="DochiDochi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/finger_paint"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#F57C00"
+                 />
+            <TextView
+                android:id="@+id/firstdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-07-21"
+                android:textSize="15dp"
+                android:fontFamily="@font/finger_paint"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_gravity="center"
+                android:fontFamily="@font/finger_paint"
+                android:text="18"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:layout_gravity="center"
+                android:fontFamily="@font/finger_paint"
+                android:text="cat"
+                android:textColor="#000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

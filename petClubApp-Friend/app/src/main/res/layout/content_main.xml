@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/container_news">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_marginVertical="@dimen/activity_vertical_margin">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/newsRecyclerView">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:fontFamily="@font/delius_unicase"
+                android:id="@+id/banner_weekly_issue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FDA085"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Weekly Issue"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_below="@+id/container_news"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/banner_weekly_issue" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

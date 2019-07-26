@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MyPets.PetLargeActivity"
+    tools:showIn="@layout/app_bar_pet_full_size">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pet_species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/snowburst_one"
+                android:gravity="center"
+                android:text="Hedgehog"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/delius_unicase"
+                android:text="DochiDochi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pet_firstdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/snowburst_one"
+                android:gravity="center"
+                android:text="2016-07-18"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pet_profile"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:src="@drawable/dog" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/snowburst_one"
+                    android:text="Age is:  "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pet_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/delius_unicase"
+                    android:text="3"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/snowburst_one"
+                    android:text="Gender is:  "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pet_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/delius_unicase"
+                    android:text="Female"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/snowburst_one"
+                    android:text="Neutralization?  "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pet_neutralization"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/delius_unicase"
+                    android:text="No"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/snowburst_one"
+                    android:text="My BF:  "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pet_BFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/delius_unicase"
+                    android:text="DuchiDuchi"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/edit_pet_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/delius_unicase"
+                    android:text="edit"
+                    android:textStyle="bold"
+
+                    />
+
+                <Button
+                    android:id="@+id/delete_pet_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/delius_unicase"
+                    android:text="delete"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/diary_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/delius_unicase"
+                android:text="Go to Diary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

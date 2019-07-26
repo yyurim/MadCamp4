@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "298284076303",
+    "firebase_url": "https://madcamp-ff1af.firebaseio.com",
+    "project_id": "madcamp-ff1af",
+    "storage_bucket": "madcamp-ff1af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298284076303:android:c667dd35c747d098",
+        "android_client_info": {
+          "package_name": "com.madcamp.petclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298284076303-cvlr4gedgmn3faksf35lltne88f00gdr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.madcamp.petclub",
+            "certificate_hash": "856b0eb42c68aa91f83dbf7d26ea181aae6e20ec"
+          }
+        },
+        {
+          "client_id": "298284076303-4jeevn9bphhvotn9c2pn1etdt6nqjns8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-PppU6TP2fog2CzFuxZeAyRt16-wt9lY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298284076303-4jeevn9bphhvotn9c2pn1etdt6nqjns8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

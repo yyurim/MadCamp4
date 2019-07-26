@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+                <LinearLayout
+                    android:id="@+id/cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/title"
+                        android:layout_width="270dp"
+                        android:layout_height="fill_parent"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp" >
+
+                        <TextView
+                            android:fontFamily="@font/delius_unicase"
+                            android:id="@+id/postTitle"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            tools:text="My First Post" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Author"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:cardBackgroundColor="#f5f5dc"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp" >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/postAuthorPhoto"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_action_account_circle_40"
+                                app:civ_border_color="@color/colorAccent"/>
+                            <TextView
+                                android:id="@+id/postAuthor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_below="@+id/postAuthorPhoto"
+                                android:textAlignment="center"
+                                tools:text="PIN" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_below="@id/fieldTitle"
+                android:id="@+id/postImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/postBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                tools:text="@string/lorem" />
+
+            <LinearLayout
+                android:id="@+id/commentForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/postTextLayout"
+                android:layout_marginTop="20dp"
+                android:weightSum="1.0">
+
+                <EditText
+                    android:id="@+id/fieldCommentText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:hint="Write a comment..."
+                    android:fontFamily="@font/finger_paint"
+                    android:maxLines="1" />
+
+                <Button
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/delius_unicase"
+                    android:id="@+id/buttonPostComment"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:text="Post"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPostComments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/commentForm"
+                android:fontFamily="@font/delius_unicase"
+                tools:listitem="@layout/item_comment" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

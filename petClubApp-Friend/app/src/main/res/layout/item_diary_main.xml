@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/colorAccent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/petImage"
+            android:src="@drawable/ic_user"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="cute cat"
+            android:textSize="20dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:text="18"
+            android:textSize="15dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/species"
+            android:textSize="15dp"
+            android:text="cat"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edt_pet_photo"
+        android:hint="Name"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_iconPadding="0dp"
+        android:drawableRight="@drawable/ic_user"
+        />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edt_pet_name"
+        android:hint="Name"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_iconPadding="0dp"
+        android:drawableRight="@drawable/ic_user"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edt_pet_gender"
+        android:hint="Gender"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_iconPadding="0dp"
+        android:drawableRight="@drawable/ic_lock"
+        />
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MyInfo.MyInfoActivity"
+    tools:showIn="@layout/app_bar_my_info">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="103m"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15.7sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="followers"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="11.7sp" />
+
+
+        </LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@drawable/ic_action_account_circle_40"
+            app:civ_border_color="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="808"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15.7sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="following"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="11.7sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER NAME"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20.7sp" />
+
+
+
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs" />
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_myCompanion"
+            android:icon="@drawable/ic_companion"
+            android:title="MyCompanionAnimals" />
+        <item
+            android:id="@+id/nav_board"
+            android:icon="@drawable/board"
+            android:title="Board"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_friends"
+                android:icon="@drawable/nav_friends"
+                android:title="PetChat" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="PetNews" />
+            <item
+                android:id="@+id/nav_hospital_info"
+                android:icon="@drawable/nav_hospital"
+                android:title="NearBy" />
+        </menu>
+    </item>
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_myInfo"
+                android:icon="@drawable/setting"
+                android:title="MyInfo"/>
+        </menu>
+    </item>
+
+</menu>
