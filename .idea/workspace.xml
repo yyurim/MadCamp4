@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50119e30-1a0b-44a1-811c-1b859cb8c40a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/petClubApp-Friend/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/petClubApp-Friend/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1phQua4Ahl4HumQncF4OYYZW2Ok" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="emulator" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50119e30-1a0b-44a1-811c-1b859cb8c40a" name="Default Changelist" comment="" />
+      <created>1615633065584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615633065584</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="148" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615634685731">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="148" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1615634685731" />
+    <state x="493" y="0" key="#petclub" timestamp="1615634390295">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="493" y="0" key="#petclub/0.0.1280.680@0.0.1280.680" timestamp="1615634390295" />
+    <state x="159" y="154" width="1060" height="440" key="AVDManager" timestamp="1615634634156">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="159" y="154" width="1060" height="440" key="AVDManager/0.0.1280.680@0.0.1280.680" timestamp="1615634634156" />
+    <state x="84" y="0" key="SettingsEditor" timestamp="1615634633809">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="84" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1615634633809" />
+  </component>
+</project>
